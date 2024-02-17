@@ -6,72 +6,125 @@
 
 body {
   background-color: black;
+  /* Sets the background color of the entire page to black */
 }
 
 .app {
   background: #fff;
+  /* Sets the background color of the app container to white */
   width: 90%;
+  /* Sets the width of the app container to 90% of its parent container */
   max-width: 600px;
-  margin: 10px auto 0;
+  /* Sets the maximum width of the app container to 600 pixels */
+  margin: 10px auto ;
+  /* Centers the app container horizontally with a top margin of 10px */
   border-radius: 20px;
+  /* Applies rounded corners to the app container */
   padding: 30px;
+  /* Adds internal padding to the app container */
 }
 
 .app h1 {
   font-size: 25px;
+  /* Sets the font size of h1 elements within the app container */
   color: #001e4d;
+  /* Sets the text color of h1 elements to dark blue */
   font-weight: 600;
+  /* Sets the font weight of h1 elements to bold */
   border-bottom: 1px solid #333;
+  /* Adds a solid border line below h1 elements */
   padding-bottom: 30px;
+  /* Adds space below h1 elements */
+}
+.topic{
+  width: 100%;
+  margin-top: 10px;
+}
+.topic-btn{
+  padding: 5px 15px ;
+  margin-left: 10px;
+  border-radius: 10px;
+  border:2px solid #222 ;
+  cursor: pointer;
 }
 
 .quiz {
   padding: 20px 0;
+  /* Adds vertical padding to elements with the 'quiz' class */
 }
 
 .quiz h2 {
   font-size: 18px;
+  /* Sets the font size of h2 elements within the quiz container */
   color: #001e4d;
+  /* Sets the text color of h2 elements to dark blue */
   font-weight: 600;
-
+  /* Sets the font weight of h2 elements to bold */
 }
 
 .btn {
   background: #fff;
+  /* Sets the background color of buttons to white */
   color: #222;
+  /* Sets the text color of buttons to dark gray */
   width: 100%;
-  border: 1px sold #222;
+  /* Sets the width of buttons to 100% of their parent container */
+  border: 1px solid #222;
+  /* Sets a solid border around buttons with dark gray color */
   font-weight: 500;
+  /* Sets the font weight of buttons to semi-bold */
   padding: 10px;
+  /* Adds internal padding to buttons */
   margin: 10px 0;
+  /* Adds vertical margin to buttons */
   text-align: left;
+  /* Aligns the text inside buttons to the left */
   border-radius: 4px;
+  /* Applies rounded corners to buttons */
   cursor: pointer;
+  /* Displays a pointer cursor when hovering over buttons */
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
   background: #222;
+  /* Sets the background color of buttons to dark gray on hover */
   color: #fff;
+  /* Sets the text color of buttons to white on hover */
+}
+
+.btn:disabled {
+  cursor: no-drop;
 }
 
 #next-btn {
   background: #001e4d;
+  /* Sets the background color of the 'Next' button to dark blue */
   color: #fff;
+  /* Sets the text color of the 'Next' button to white */
   font-weight: 500;
+  /* Sets the font weight of the 'Next' button to semi-bold */
   width: 150px;
+  /* Sets the width of the 'Next' button to 150 pixels */
   border: 0;
+  /* Removes the border from the 'Next' button */
   padding: 10px;
+  /* Adds internal padding to the 'Next' button */
   margin: 20px auto 0;
+  /* Centers the 'Next' button horizontally with a top margin of 20px */
   border-radius: 4px;
+  /* Applies rounded corners to the 'Next' button */
   cursor: pointer;
+  /* Displays a pointer cursor when hovering over the 'Next' button */
   display: none;
-
+  /* Hides the 'Next' button by default */
 }
 
 .correct {
   background: green;
+  /* Sets the background color of elements with the 'correct' class to green */
 }
 
 .incorrect {
   background: red;
+  /* Sets the background color of elements with the 'incorrect' class to red */
 }
